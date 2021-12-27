@@ -11,8 +11,8 @@ config_s2i
 echo "---> Installing application source"
 
 Cp  -Rf  /tmp/src/*.html  ./
-DATE= 'date "+%F"'
-echo= "$DATE i love you" >> ./info.html
+DATE= 'date"+%F"'
+echo "$DATE i love you" >> ./info.html
 # Fix source directory permissions
 fix-permissions ./
 
