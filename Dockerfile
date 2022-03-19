@@ -1,6 +1,6 @@
 FROM  centos:latest
-LABEL kuber.io=foundation/
-      ex2888=exam/
+LABEL kuber.io=foundation /
+      openshift.io=ex299xam 
       MAINTAINER="REDHAT EXAMS"
 RUN   yum install httpd -y &&  yum clean all &&  rm -Rf /tmp* &&  sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf 
 COPY  src/  /var/www/html/
