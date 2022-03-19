@@ -7,6 +7,6 @@ COPY  src/  /var/www/html/
 RUN chown apache:apache  /var/run/httpd  /var/log/httpd  
 RUN chmod  -R 777  /var/run/httpd  /var/log/httpd 
 EXPOSE 8080
-USER apache
+USER 1000
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
