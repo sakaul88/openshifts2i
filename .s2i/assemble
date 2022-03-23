@@ -7,9 +7,9 @@ source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
 echo "---> Enabling s2i support in httpd24 image"
 
 config_s2i
-cp -Rf /usr/local/*.html ./
+cp -Rf /src/local/*.html ./
 DATE=`date "+%F"`
-echo "$DATE text" >> ./info.html
+echo "$DATE some text" >> ./info.html
 # Fix source directory permissions
 fix-permissions ./
 
